@@ -136,12 +136,14 @@ def gameover():
         fill=FOOD_COLOR)
 
 # Instellen UI
+## menu-UI
 
 mainWindow = Toplevel()
 mainWindow.title("Welcome to snake!")
 mainWindow.resizable(False, False)
 mainLabel = Label(mainWindow, text="Main menu").pack()
 
+## Game-UI
 
 gameWindow = Tk()
 gameWindow.title("Snake game by MarcRvB")
@@ -180,3 +182,4 @@ snake = Snake()
 food = Food()
 
 next_move(snake, food)
+
